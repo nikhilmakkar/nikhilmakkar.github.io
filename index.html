@@ -52,11 +52,12 @@ h1{font-size:34px;font-weight:600;letter-spacing:-.01em;margin:0 0 14px}
 
 /* entry rows */
 .row{
-  display:flex;gap:22px;align-items:flex-start;
+  display:flex;gap:26px;align-items:flex-start;
   padding:20px 0;border-bottom:1px solid #eee;
 }
-.row .thumb{width:200px;flex-shrink:0}
-.row .thumb img{width:100%;display:block;border:1px solid #e2e2de}
+.row .thumb{width:300px;flex-shrink:0}
+.row .thumb img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;
+  border:1px solid #e2e2de;box-shadow:0 1px 4px rgba(0,0,0,.09)}
 .row .body{flex:1;min-width:0}
 .title{font-weight:600}
 .authors,.venue{font-size:15px;color:#444}
@@ -78,7 +79,7 @@ h1{font-size:34px;font-weight:600;letter-spacing:-.01em;margin:0 0 14px}
 .bib.open{display:block}
 @media (max-width:600px){
   .row{flex-direction:column;gap:12px}
-  .row .thumb{width:100%;max-width:280px}
+  .row .thumb{width:100%;max-width:360px}
 }
 footer{margin-top:40px;font-size:13px;color:#888}
 </style>
@@ -98,7 +99,7 @@ footer{margin-top:40px;font-size:13px;color:#888}
   </div>
 
   <div class="bar">Research</div>
-  <p class="research">Interested in Computer Vision and Muli-modal Learning.</p>
+  <p class="research">Interested in Computer Vision and Multi-modal Learning.</p>
 
   <div class="bar">Updates</div>
   <ul class="updates">
@@ -129,6 +130,28 @@ footer{margin-top:40px;font-size:13px;color:#888}
   journal = {IEEE Journal of Selected Topics in Applied Earth Observations
              and Remote Sensing},
   year    = {2024}
+}</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="thumb"><img src="forest-plot.png" alt="Forest inventory plot center measurement from UAS imagery" loading="lazy"></div>
+    <div class="body">
+      <div class="title">Improving deciduous forest inventory plot center measurement using unoccupied aerial systems imagery</div>
+      <div class="authors">J. Carpenter, D. Rentauskas, <b>N. Makkar</b>, J. Jung, S. Fei</div>
+      <div class="venue"><i>Journal of Forestry</i>, 2023</div>
+      <div class="note">Drone imagery locates inventory plot centers under a deciduous canopy more accurately than the GPS methods field crews normally rely on.</div>
+      <div class="refs"><a href="https://doi.org/10.1093/jofore/fvad008">paper</a><span class="sep">/</span><button type="button" data-bib="bib6">bibtex</button></div>
+      <pre class="bib" id="bib6">@article{carpenter2023improving,
+  title   = {Improving deciduous forest inventory plot center measurement
+             using unoccupied aerial systems imagery},
+  author  = {Carpenter, Joshua and Rentauskas, Daniel and Makkar, Nikhil and
+             Jung, Jinha and Fei, Songlin},
+  journal = {Journal of Forestry},
+  volume  = {121},
+  number  = {3},
+  pages   = {262--271},
+  year    = {2023}
 }</pre>
     </div>
   </div>
